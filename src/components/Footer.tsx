@@ -23,6 +23,7 @@ export function Footer() {
             <div className="mt-4 flex flex-col gap-2 text-sm text-white/50">
               <Link to="/" className="transition hover:text-white">Home</Link>
               <Link to="/services" className="transition hover:text-white">Services</Link>
+              <Link to="/portfolio" className="transition hover:text-white">Portfolio</Link>
               <Link to="/about" className="transition hover:text-white">About us</Link>
               <Link to="/contact" className="transition hover:text-white">Contact</Link>
             </div>
