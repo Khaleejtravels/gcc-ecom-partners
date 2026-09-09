@@ -24,9 +24,9 @@ export const Route = createFileRoute("/contact")({
 });
 
 const channels = [
-  { label: "Email", value: "hello@khaleejpartners.com", href: "mailto:hello@khaleejpartners.com" },
-  { label: "Phone", value: "+971 50 000 0000", href: "tel:+971500000000" },
-  { label: "WhatsApp", value: "+971 50 000 0000", href: "https://wa.me/971500000000" },
+  { label: "Email", value: "contact@khaleejpartners.online", href: "mailto:contact@khaleejpartners.online" },
+  { label: "Phone", value: "+92 371 5113425", href: "tel:+923715113425" },
+  { label: "WhatsApp", value: "+92 371 5113425", href: "https://wa.me/923715113425" },
 ];
 
 function ContactPage() {
@@ -74,7 +74,7 @@ function ContactPage() {
                 const body = encodeURIComponent(
                   `Name: ${data.get("name")}\nEmail: ${data.get("email")}\nPlatforms: ${data.get("platforms")}\n\n${data.get("message")}`,
                 );
-                window.location.href = `mailto:hello@khaleejpartners.com?subject=${subject}&body=${body}`;
+                window.location.href = `mailto:contact@khaleejpartners.online?subject=${subject}&body=${body}`;
               }}
             >
               <h2 className="font-display text-2xl font-semibold">Request your free audit</h2>

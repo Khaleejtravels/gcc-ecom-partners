@@ -31,10 +31,10 @@ export function Footer() {
           <div>
             <p className="font-display text-sm font-semibold uppercase tracking-wider text-white/80">Contact</p>
             <div className="mt-4 flex flex-col gap-2 text-sm text-white/50">
-              <a href="mailto:hello@khaleejpartners.com" className="transition hover:text-white">
-                hello@khaleejpartners.com
+              <a href="mailto:contact@khaleejpartners.online" className="transition hover:text-white">
+                contact@khaleejpartners.online
               </a>
-              <a href="tel:+971500000000" className="transition hover:text-white">+971 50 000 0000</a>
+              <a href="tel:+923715113425" className="transition hover:text-white">+92 371 5113425</a>
               <span>KSA · UAE · Qatar · Bahrain · Oman · Kuwait</span>
             </div>
           </div>
