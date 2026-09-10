@@ -70,7 +70,7 @@ function AboutPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-16">
-        <div className="glass grid gap-8 rounded-3xl p-8 sm:grid-cols-2 md:p-10 lg:grid-cols-4">
+        <div className="glass professional-card grid gap-8 rounded-lg p-8 sm:grid-cols-2 md:p-10 lg:grid-cols-4">
           {stats.map((s, i) => (
             <Reveal key={s.label} delay={i * 100}>
               <div>
@@ -91,7 +91,7 @@ function AboutPage() {
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {values.map((v, i) => (
             <Reveal key={v.title} delay={i * 100}>
-              <div className="glass h-full rounded-3xl p-7 transition hover:-translate-y-1 hover:border-white/25">
+               <div className="glass professional-card h-full rounded-lg p-7 transition hover:-translate-y-1">
                 <div className="grid size-10 place-items-center rounded-full bg-ocean/20 text-glow">{v.icon}</div>
                 <h3 className="mt-4 font-display text-lg font-semibold">{v.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/60">{v.text}</p>
@@ -103,7 +103,7 @@ function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <Reveal>
-          <div className="glass relative overflow-hidden rounded-3xl p-10 md:p-14">
+           <div className="glass professional-card relative overflow-hidden rounded-lg p-10 md:p-14">
             <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-glow/25 blur-3xl" />
             <div className="relative grid items-center gap-8 md:grid-cols-[1.4fr_1fr]">
               <div>

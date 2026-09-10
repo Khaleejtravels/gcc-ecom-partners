@@ -74,7 +74,7 @@ function ServicesPage() {
         <div className="grid gap-5 md:grid-cols-2">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={(i % 2) * 100}>
-              <div className="glass h-full rounded-3xl p-8 transition hover:border-white/25">
+              <div className="glass professional-card h-full rounded-lg p-8 transition hover:-translate-y-1">
                 <div className="flex items-center gap-3">
                   <div className="grid size-11 place-items-center rounded-full bg-ocean/20 text-lg text-glow">
                     {s.icon}
@@ -98,7 +98,7 @@ function ServicesPage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <Reveal>
-          <div className="glass relative overflow-hidden rounded-3xl p-10 text-center md:p-14">
+           <div className="glass professional-card relative overflow-hidden rounded-lg p-10 text-center md:p-14">
             <div className="pointer-events-none absolute -top-16 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-glow/25 blur-3xl" />
             <h2 className="relative font-display text-3xl font-semibold tracking-tight md:text-4xl">
               Not sure where to start?
