@@ -6,5 +6,5 @@
 - [x] Contact page (email/phone/WhatsApp + free-audit form)
 - [x] Build clean, pages verified via screenshots
 - [x] Replace placeholder contact details with real ones — contact@khaleejpartners.online, +923715113425
-- [ ] Refresh the full-site color palette, animated background, and card styling
-- [ ] Extend the landing page with additional professional content sections
+- [x] Refresh the full-site color palette, animated background, and card styling
+- [x] Extend the landing page with additional professional content sections
