@@ -68,6 +68,19 @@ const services = [
   },
 ];
 
+const process = [
+  { step: "01", title: "Audit the opportunity", text: "We review catalogue quality, search visibility, stock health and account performance across each marketplace." },
+  { step: "02", title: "Build the growth system", text: "Your team receives a prioritised plan for listings, content, fulfilment and customer experience." },
+  { step: "03", title: "Operate and improve", text: "We execute daily, monitor performance and keep every channel aligned as demand changes." },
+];
+
+const outcomes = [
+  { value: "6", label: "GCC markets covered" },
+  { value: "4", label: "Major platforms managed" },
+  { value: "4+", label: "Years of regional experience" },
+  { value: "1", label: "Accountable operating team" },
+];
+
 function HomePage() {
   return (
     <SiteShell>
@@ -117,7 +130,7 @@ function HomePage() {
           </div>
 
           <div className="anim-rise relative" style={{ animationDelay: "0.2s" }}>
-            <div className="glass rounded-3xl p-5 shadow-2xl shadow-black/40">
+              <div className="glass professional-card rounded-2xl p-5">
               <div className="flex items-center justify-between px-2 pb-4">
                 <span className="text-sm font-medium text-white/80">Live marketplace dashboard</span>
                 <span className="flex gap-1.5">
@@ -204,7 +217,7 @@ function HomePage() {
         <div className="mt-10 grid gap-5 md:grid-cols-4">
           {platforms.map((p, i) => (
             <Reveal key={p.name} delay={i * 100}>
-              <div className="glass h-full rounded-2xl p-6 transition hover:-translate-y-1 hover:border-white/25">
+               <div className="glass professional-card h-full rounded-lg p-6 transition hover:-translate-y-1">
                 <div className="grid size-11 place-items-center rounded-xl bg-white/10 font-display text-base font-bold text-glow">
                   {p.letter}
                 </div>
@@ -229,7 +242,7 @@ function HomePage() {
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 100}>
-              <div className="glass h-full rounded-3xl p-7">
+               <div className="glass professional-card h-full rounded-lg p-7 transition hover:-translate-y-1">
                 <div className="flex items-center gap-3">
                   <div className="grid size-10 place-items-center rounded-full bg-ocean/20 text-glow">{s.icon}</div>
                   <h3 className="font-display text-lg font-semibold">{s.title}</h3>
@@ -242,6 +255,48 @@ function HomePage() {
                     </span>
                   ))}
                 </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* PROOF */}
+      <section className="border-y border-white/10 bg-ink/45">
+        <div className="mx-auto grid max-w-7xl gap-px px-6 py-14 sm:grid-cols-2 lg:grid-cols-4">
+          {outcomes.map((item, i) => (
+            <Reveal key={item.label} delay={i * 80}>
+              <div className="border-l border-glow/25 px-6 py-3">
+                <p className="font-display text-4xl font-semibold text-glow">{item.value}</p>
+                <p className="mt-2 text-sm text-white/60">{item.label}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* PROCESS */}
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <Reveal>
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wider text-glow">How we work</p>
+              <h2 className="mt-3 max-w-2xl font-display text-3xl font-semibold tracking-tight md:text-4xl">
+                From scattered storefronts to one clear operation.
+              </h2>
+            </div>
+            <p className="max-w-md text-sm leading-relaxed text-white/60">
+              A practical operating rhythm designed for brands entering or scaling across the Gulf.
+            </p>
+          </div>
+        </Reveal>
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
+          {process.map((item, i) => (
+            <Reveal key={item.step} delay={i * 100}>
+              <div className="glass professional-card h-full rounded-lg p-7 transition hover:-translate-y-1">
+                <span className="font-display text-sm font-semibold text-glow">{item.step}</span>
+                <h3 className="mt-8 font-display text-xl font-semibold">{item.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/60">{item.text}</p>
               </div>
             </Reveal>
           ))}

@@ -134,7 +134,7 @@ function PortfolioPage() {
 
       {/* RESULTS STRIP */}
       <section className="mx-auto max-w-7xl px-6 pb-16">
-        <div className="glass grid gap-8 rounded-3xl p-8 sm:grid-cols-2 md:p-10 lg:grid-cols-4">
+        <div className="glass professional-card grid gap-8 rounded-lg p-8 sm:grid-cols-2 md:p-10 lg:grid-cols-4">
           {results.map((r, i) => (
             <Reveal key={r.label} delay={i * 100}>
               <div>
@@ -159,7 +159,7 @@ function PortfolioPage() {
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {caseStudies.map((c, i) => (
             <Reveal key={c.category} delay={i * 80}>
-              <div className="glass flex h-full flex-col rounded-3xl p-7 transition hover:-translate-y-1 hover:border-white/25">
+               <div className="glass professional-card flex h-full flex-col rounded-lg p-7 transition hover:-translate-y-1">
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-1.5">
                     {c.platforms.map((p) => (
@@ -206,7 +206,7 @@ function PortfolioPage() {
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {platformWork.map((p, i) => (
             <Reveal key={p.name} delay={i * 100}>
-              <div className="glass h-full rounded-2xl p-6 transition hover:-translate-y-1 hover:border-white/25">
+               <div className="glass professional-card h-full rounded-lg p-6 transition hover:-translate-y-1">
                 <div className="grid size-11 place-items-center rounded-xl bg-white/10 font-display text-base font-bold text-glow">
                   {p.letter}
                 </div>
@@ -228,7 +228,7 @@ function PortfolioPage() {
       {/* CTA */}
       <section className="mx-auto max-w-7xl px-6 pb-20">
         <Reveal>
-          <div className="glass relative overflow-hidden rounded-3xl p-10 md:p-14">
+           <div className="glass professional-card relative overflow-hidden rounded-lg p-10 md:p-14">
             <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-glow/25 blur-3xl" />
             <div className="relative grid items-center gap-8 md:grid-cols-[1.4fr_1fr]">
               <div>

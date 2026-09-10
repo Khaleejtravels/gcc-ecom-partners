@@ -51,7 +51,7 @@ function ContactPage() {
                 <a
                   key={c.label}
                   href={c.href}
-                  className="glass flex items-center justify-between rounded-2xl px-6 py-4 transition hover:-translate-y-0.5 hover:border-white/25"
+                   className="glass professional-card flex items-center justify-between rounded-lg px-6 py-4 transition hover:-translate-y-0.5"
                 >
                   <span className="text-sm text-white/60">{c.label}</span>
                   <span className="font-display font-semibold text-glow">{c.value}</span>
@@ -65,7 +65,7 @@ function ContactPage() {
 
           <Reveal delay={150}>
             <form
-              className="glass rounded-3xl p-8"
+               className="glass professional-card rounded-lg p-8"
               onSubmit={(e) => {
                 e.preventDefault();
                 const form = e.currentTarget;
