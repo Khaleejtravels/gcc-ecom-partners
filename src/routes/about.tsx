@@ -3,6 +3,7 @@ import { SiteShell } from "@/components/SiteShell";
 import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/about")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: "About Us — Khaleej Partners" },
